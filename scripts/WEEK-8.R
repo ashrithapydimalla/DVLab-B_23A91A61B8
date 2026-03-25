@@ -58,7 +58,7 @@ ggplot(corr_long,aes(x=Var1,y=Var2,fill=value))+
   theme_minimal()+
   labs(title="Correlation Heatmap of mtcars")
 
-#Heat mao with values diaplyes
+#Heat map with values displayes
 ggplot(corr_long,aes(x=Var1,y=Var2,fill=value))+
   geom_tile()+
   geom_text(aes(label=round(value,2)))+
